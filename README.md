@@ -15,26 +15,32 @@ body{
  background-size:cover;
  background-attachment:fixed;
 
- padding-right:220px;   /* 右側メニューと重ならないように */
+ padding-top:120px;   /* 上のメニュー分余白 */
 }
 
-/* ✅ 右固定目次 */
+/* ✅ 上部メニュー（目次） */
 #toc {
   position:fixed;
-  top:20px;
-  right:10px;
-  width:200px;
+  top:0;
+  left:0;
+  width:100%;
 
   background:rgba(0,0,0,0.6);
   padding:10px;
-  border-radius:6px;
+  text-align:center;
 
   backdrop-filter: blur(3px);
 }
 
 #toc ul {
+  list-style:none;
   margin:0;
-  padding-left:20px;
+  padding:0;
+}
+
+#toc li {
+  display:inline-block;
+  margin:0 10px;
 }
 
 #toc a {
@@ -58,7 +64,6 @@ section {
     animation:slidein 0.8s ease-out forwards;
 }
 
-/* 左から滑り込むアニメーション */
 @keyframes slidein {
     from {
         opacity:0;
@@ -83,9 +88,8 @@ footer{
 
 <h1>やもweb!</h1>
 
-<!-- ✅ 目次 -->
+<!-- ✅ 上に目次 -->
 <nav id="toc">
-<h2>📘 目次</h2>
 <ul>
  <li><a href="#intro">自己紹介</a></li>
  <li><a href="#fn">フォートナイト</a></li>
@@ -126,16 +130,13 @@ footer{
 
 <p>
 Minecraft（マインクラフト）は、プレイヤーが自由にブロックを使って<br>
-建築や探検を行うことができる3Dサンドボックスゲームです。<br>
-無限に広がる世界で、自分だけの建物を作ったり、冒険したり、<br>
-モンスターと戦ったりできる自由度の高いゲームです。
+建築や探検を行うことができる3Dサンドボックスゲームです。
 </p>
 
 <p>
-マイクラではサーバーを作成しています！！<br>
-参加も待っています😊
+サーバーも作っています！！<br>
+参加待っています😊
 </p>
-
 </section>
 
 <footer>
