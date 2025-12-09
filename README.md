@@ -35,10 +35,10 @@ body{
 }
 
 #discord img{
-    width:200px;              /* 横長っぽくする */
+    width:200px;
     height:auto;
-    border:3px solid white;  /* 枠 */
-    border-radius:10px;      /* 角丸 */
+    border:3px solid white;
+    border-radius:10px;
     background:rgba(0,0,0,0.4);
     padding:5px;
 }
@@ -51,7 +51,7 @@ body{
 
  width:220px;
 
- background:rgba(0,0,0,0.55);
+ background:rgba(0,0,0,0,0.55);
  padding:15px;
 
  border-radius:0 8px 8px 0;
@@ -114,9 +114,7 @@ footer{
 <!-- Discord -->
 <div id="discord">
 <h2>🎮 Discordスタッツ</h2>
-
 <img src="https://media1.tenor.com/m/CNBGgG2DU10AAAAC/nyan-cat-poptart.gif">
-
 </div>
 
 <!-- 左メニュー -->
@@ -166,6 +164,8 @@ footer{
 
 <!-- お問い合わせ -->
 <footer id="contact">
+<h2>📩 お問い合わせ先</h2>
+<p>メール : <a href="mailto:yamoyamo0224@gmail.com">yamoyamo0224@gmail.com</a></p>
 </footer>
 
 </body>
