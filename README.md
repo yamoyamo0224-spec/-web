@@ -6,7 +6,7 @@
 
 <style>
 
-/* 背景・基本 */
+/* 背景 */
 body{
  margin:0;
  font-family:Arial, sans-serif;
@@ -15,88 +15,66 @@ body{
  background-size:cover;
  background-attachment:fixed;
 
- padding-top:240px;
+ padding-top:260px; 
 }
 
-/* Discordスタッツ最上部 */
+/* Discordスタッツ */
 #discord {
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  text-align:center;
+ position:fixed;
+ top:0;
+ left:0;
+ width:100%;
+ text-align:center;
 
-  background:rgba(0,0,0,0.55);
-  padding:10px;
+ background:rgba(0,0,0,0.55);
+ padding:10px;
 
-  z-index:9999;
-  backdrop-filter: blur(3px);
+ z-index:9999;
 }
 
 /* メニュー */
 #toc {
-  position:fixed;
-  top:100px;
-  left:0;
-  width:100%;
-  text-align:center;
+ position:fixed;
+ top:120px;
+ left:0;
+ width:100%;
+ text-align:center;
 
-  background:rgba(0,0,0,0.6);
-  padding:10px;
+ background:rgba(0,0,0,0.6);
+ padding:10px;
 
-  z-index:9999;
-  backdrop-filter: blur(3px);
+ z-index:9999;
 }
 
-#toc ul {
-  list-style:none;
-  margin:0;
-  padding:0;
+#toc a{
+ color:#66ccff;
+ margin:0 10px;
+ text-decoration:none;
 }
 
-#toc li {
-  display:inline-block;
-  margin:0 12px;
-}
-
-#toc a {
-  color:#66ccff;
-  text-decoration:none;
-}
-
-#toc a:hover {
-  text-decoration:underline;
-}
+#toc a:hover{ text-decoration:underline; }
 
 /* セクション */
 section {
-    padding:30px;
-    background:rgba(0,0,0,0.55);
-    margin:40px;
+ padding:30px;
+ background:rgba(0,0,0,0.55);
+ margin:40px;
 
-    opacity:0;
-    transform:translateX(-50px);
+ opacity:0;
+ transform:translateX(-40px);
 
-    animation:slidein 0.8s ease-out forwards;
+ animation:fade 0.7s forwards;
 
-    /* メニューに隠れないようにする */
-    scroll-margin-top:170px;
+ scroll-margin-top:170px; 
 }
 
-@keyframes slidein {
-    from {
-        opacity:0;
-        transform:translateX(-50px);
-    }
-    to {
-        opacity:1;
-        transform:translateX(0);
-    }
+@keyframes fade {
+ to{ opacity:1; transform:translateX(0); }
 }
 
 footer{
- padding:20px;
  background:rgba(0,0,0,0.55);
+ padding:20px;
 }
 
 </style>
@@ -105,33 +83,27 @@ footer{
 
 <h1>やもweb!</h1>
 
-<!-- ✅ Discordスタッツ -->
+<!-- Discord -->
 <div id="discord">
-<h2>🎮 Discord スタッツ</h2>
-
-<!-- 表示されない場合に備えて alt も付けた -->
-<img 
-    src="https://discordstatus.com/api/v1/users/1096056322346197103.png"
-    alt="Discordスタッツ"
-    style="max-width:260px;">
+<h2>🎮 Discordスタッツ</h2>
+<img src="https://discordstatus.com/api/v1/users/1096056322346197103.png" style="max-width:240px;">
 </div>
 
-<!-- ✅ メニュー -->
+<!-- メニュー -->
 <nav id="toc">
-<ul>
- <li><a href="#intro">👤 自己紹介</a></li>
- <li><a href="#fn">🔥 フォートナイト</a></li>
- <li><a href="#mc">⛏️ マインクラフト</a></li>
- <li><a href="#discord">🎮 スタッツ</a></li>
- <li><a href="#contact">📩 お問い合わせ</a></li>
-</ul>
+<a href="#intro">👤 自己紹介</a>
+<a href="#fn">🔥 フォートナイト</a>
+<a href="#mc">⛏️ マインクラフト</a>
+<a href="#discord">🎮 スタッツ</a>
+<a href="#contact">📩 お問い合わせ</a>
 </nav>
 
 <!-- 自己紹介 -->
 <section id="intro">
 <h2>自己紹介</h2>
 <p>名前 : yam0oo</p>
-<p>好きなゲーム :
+<p>
+好きなゲーム :
 <a href="https://www.fortnite.com/?lang=ja">フォートナイト</a>、
 <a href="https://www.minecraft.net/ja-jp">マインクラフト</a>
 </p>
@@ -140,36 +112,30 @@ footer{
 <!-- フォートナイト -->
 <section id="fn">
 <h2>フォートナイト</h2>
-
 <p>
-フォートナイトは2017年リリースのオンラインゲームです。
+フォートナイトは2017年発売のオンラインバトルロイヤルゲームです。
 </p>
-
 <p>
-最近は <strong>ブレインロット</strong> をプレイ中🔥<br>
-総ドラゴン獲得数は<strong>10以上</strong>です！！
+ブレインロットやってて<br>
+総ドラゴン獲得数は10以上🔥
 </p>
 </section>
 
 <!-- マインクラフト -->
 <section id="mc">
 <h2>マインクラフト</h2>
-
 <p>
-Minecraftは自由度の高いサンドボックスゲームです。
+ブロックを使って建築できる自由度最高ゲーム！
 </p>
-
 <p>
-サーバーも作っています！！<br>
-参加待っています😊
+サーバーも作っています😊
 </p>
 </section>
 
 <!-- お問い合わせ -->
 <footer id="contact">
-<p>📩 お問い合わせ： yamoyamo0224@gmail.com</p>
+📩 お問い合わせ : yamoyamo0224@gmail.com
 </footer>
 
 </body>
 </html>
-
