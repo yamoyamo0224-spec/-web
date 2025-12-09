@@ -51,7 +51,7 @@
 
     <section class="about">
         <h2>詳細</h2>
-        <p>テスト</p>
+        <p>テスト　協力たっつたっつ</p>
     </section>
 
     <footer>
