@@ -116,7 +116,7 @@ footer{
  <li><a href="#intro">👤 自己紹介</a></li>
  <li><a href="#fn">🔥 フォートナイト</a></li>
  <li><a href="#mc">⛏️ マインクラフト</a></li>
- <li><a href="#discord">🎮 スタッツ</a></li>
+ <li><a href="#discord">🎮 yamoweb</a></li>
  <li><a href="#contact">📩 お問い合わせ</a></li>
 </ul>
 </nav>
