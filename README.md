@@ -16,8 +16,8 @@ body{
  background-size:cover;
  background-attachment:fixed;
 
- padding-left:240px;   /* 左メニュー分余白 */
- padding-top:260px; 
+ padding-left:240px;
+ padding-top:260px;
 }
 
 /* Discordスタッツ */
@@ -105,7 +105,10 @@ footer{
 <!-- Discord -->
 <div id="discord">
 <h2>🎮 Discordスタッツ</h2>
-<img src="https://discordstatus.com/api/v1/users/1096056322346197103.png" style="max-width:240px;">
+
+<!-- ★ここだけ画像変更した -->
+<img src="https://media1.tenor.com/m/CNBGgG2DU10AAAAC/nyan-cat-poptart.gif"
+     style="max-width:240px;">
 </div>
 
 <!-- 左メニュー -->
@@ -155,7 +158,6 @@ footer{
 
 <!-- お問い合わせ -->
 <footer id="contact">
-📩 お問い合わせ : yamoyamo0224@gmail.com
 </footer>
 
 </body>
