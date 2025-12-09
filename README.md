@@ -15,13 +15,26 @@ body{
  background-size:cover;
  background-attachment:fixed;
 
- padding-top:120px;   /* 上のメニュー分余白 */
+ padding-top:240px;   /* スタッツ + メニュー高さ分 */
 }
 
-/* ✅ 上部メニュー（目次） */
-#toc {
+/* Discordスタッツ（最上部） */
+#discord {
   position:fixed;
   top:0;
+  left:0;
+  width:100%;
+  text-align:center;
+
+  background:rgba(0,0,0,0.55);
+  padding:10px;
+  backdrop-filter: blur(3px);
+}
+
+/* 上部メニュー */
+#toc {
+  position:fixed;
+  top:100px;
   left:0;
   width:100%;
 
@@ -40,7 +53,7 @@ body{
 
 #toc li {
   display:inline-block;
-  margin:0 10px;
+  margin:0 12px;
 }
 
 #toc a {
@@ -52,11 +65,12 @@ body{
   text-decoration:underline;
 }
 
-/* ✅ セクション（アニメーション） */
+/* セクション（余白広め + アニメーション） */
 section {
-    padding:20px;
+    padding:30px;
     background:rgba(0,0,0,0.55);
-    margin:10px;
+
+    margin:40px;   /* ← 間を大きくした */
 
     opacity:0;
     transform:translateX(-50px);
@@ -88,16 +102,24 @@ footer{
 
 <h1>やもweb!</h1>
 
-<!-- ✅ 上に目次 -->
+<!-- Discordスタッツ -->
+<div id="discord">
+<h2>🎮 Discord スタッツ</h2>
+<img src="https://discordstatus.com/api/v1/users/1096056322346197103.png">
+</div>
+
+<!-- 目次（絵文字追加） -->
 <nav id="toc">
 <ul>
- <li><a href="#intro">自己紹介</a></li>
- <li><a href="#fn">フォートナイト</a></li>
- <li><a href="#mc">マインクラフト</a></li>
+ <li><a href="#intro">👤 自己紹介</a></li>
+ <li><a href="#fn">🔥 フォートナイト</a></li>
+ <li><a href="#mc">⛏️ マインクラフト</a></li>
+ <li><a href="#discord">🎮 スタッツ</a></li>
+ <li><a href="#contact">📩 お問い合わせ</a></li>
 </ul>
 </nav>
 
-<!-- ✅ 自己紹介 -->
+<!-- 自己紹介 -->
 <section id="intro">
 <h2>自己紹介</h2>
 <p>名前 : yam0oo</p>
@@ -107,15 +129,13 @@ footer{
 </p>
 </section>
 
-<!-- ✅ フォートナイト -->
+<!-- フォートナイト -->
 <section id="fn">
 <h2>フォートナイト</h2>
 
 <p>
 フォートナイトは、2017年にリリースされたオンラインマルチプレイヤーゲームで、<br>
-全世界で4億人以上の登録ユーザーを誇ります。<br>
-プレイヤーは武器や資材を集めながら他プレイヤーと戦い、<br>
-最後の一人（またはチーム）になることを目指すゲームです。
+全世界で4億人以上の登録ユーザーを誇ります。
 </p>
 
 <p>
@@ -124,13 +144,12 @@ footer{
 </p>
 </section>
 
-<!-- ✅ マインクラフト -->
+<!-- マインクラフト -->
 <section id="mc">
 <h2>マインクラフト</h2>
 
 <p>
-Minecraft（マインクラフト）は、プレイヤーが自由にブロックを使って<br>
-建築や探検を行うことができる3Dサンドボックスゲームです。
+Minecraft（マインクラフト）は自由度の高いサンドボックスゲームです。
 </p>
 
 <p>
@@ -139,8 +158,9 @@ Minecraft（マインクラフト）は、プレイヤーが自由にブロッ�
 </p>
 </section>
 
-<footer>
-<p>お問い合わせ： yamoyamo0224@gmail.com</p>
+<!-- お問い合わせ -->
+<footer id="contact">
+<p>📩 お問い合わせ： yamoyamo0224@gmail.com</p>
 </footer>
 
 </body>
