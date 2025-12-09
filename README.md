@@ -20,7 +20,7 @@ body{
  padding-top:260px;
 }
 
-/* Discordスタッツ */
+/* Discordスタッツ（画像なし） */
 #discord {
  position:fixed;
  top:0;
@@ -32,15 +32,9 @@ body{
  padding:10px;
 
  z-index:9999;
-}
 
-#discord img{
-    width:140px;              /* ★さらに小さく & 横長 */
-    height:auto;
-    border:3px solid white;
-    border-radius:10px;
-    background:rgba(0,0,0,0.4);
-    padding:5px;
+ font-size:22px;
+ font-weight:bold;
 }
 
 /* 左固定メニュー */
@@ -111,10 +105,9 @@ footer{
 
 <h1>やもweb!</h1>
 
-<!-- Discord -->
+<!-- Discordスタッツ（画像削除→やもweb表示） -->
 <div id="discord">
-<h2>🎮 Discordスタッツ</h2>
-<img src="https://media1.tenor.com/m/CNBGgG2DU10AAAAC/nyan-cat-poptart.gif">
+🎮 スタッツ : やもweb
 </div>
 
 <!-- 左メニュー -->
