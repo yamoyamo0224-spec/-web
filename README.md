@@ -1,7 +1,7 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>やもweb!</title>
+<title>オンライン</title>
 <link rel="icon" href="https://www.minecraft.net/ja-jp">
 
 <style>
@@ -103,7 +103,7 @@ footer{
 </head>
 <body>
 
-<h1>オンライン</h1>
+<h1>やもweb!</h1>
 
 <!-- Discordスタッツ（画像削除→やもweb表示） -->
 <div id="discord">
